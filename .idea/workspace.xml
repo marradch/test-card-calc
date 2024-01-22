@@ -20,14 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d87a336-babc-4183-a2c7-ca265051fbe5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Commands/LoadCurrencyRatesCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/CurrencyEnum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/CurrencyRatesLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/card-curr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/card-curr.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/CartCalculator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/LoadCurrencyRatesCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/LoadCurrencyRatesCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Requests/CartRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/CartRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/CurrencyRatesLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CurrencyRatesLoader.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705842942472</updated>
       <workItem from="1705842943565" duration="8553000" />
-      <workItem from="1705857044878" duration="7027000" />
+      <workItem from="1705857044878" duration="18846000" />
     </task>
     <task id="LOCAL-00001" summary="endpoint &amp; validation">
       <created>1705857184485</created>
@@ -128,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705857184485</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="get currency rates via http">
+      <created>1705927376683</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705927376683</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,25 +154,30 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="endpoint &amp; validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="endpoint &amp; validation" />
+    <MESSAGE value="get currency rates via http" />
+    <option name="LAST_COMMIT_MESSAGE" value="get currency rates via http" />
   </component>
   <component name="WindowStateProjectService">
     <state x="396" y="198" width="631" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1705922963406">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="396" y="198" width="631" height="396" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1299.741@67.27.1299.741" timestamp="1705922963406" />
-    <state x="531" y="27" width="351" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1705845978629">
+    <state x="531" y="27" width="351" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1705931058213">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="531" y="27" width="351" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1299.741@67.27.1299.741" timestamp="1705845978629" />
+    <state x="531" y="27" width="351" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1299.741@67.27.1299.741" timestamp="1705931058213" />
     <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1705923211943">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1705923211943" />
-    <state x="427" y="116" width="569" height="561" key="NewPhpClassDialog" timestamp="1705857372277">
+    <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1705936662797">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="427" y="116" width="569" height="561" key="NewPhpClassDialog/67.27.1299.741@67.27.1299.741" timestamp="1705857372277" />
+    <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1705936662797" />
+    <state x="427" y="116" width="569" height="561" key="NewPhpClassDialog" timestamp="1705930746787">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="427" y="116" width="569" height="561" key="NewPhpClassDialog/67.27.1299.741@67.27.1299.741" timestamp="1705930746787" />
     <state x="512" y="322" width="399" height="149" key="NewPhpFileDialog" timestamp="1705857993194">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

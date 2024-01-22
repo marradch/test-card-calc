@@ -19,7 +19,6 @@ class CurrencyRatesLoader
                 'query' => [
                     'apikey' => 'fca_live_pfc87jPfmouVPcDUpl32XkK3D6f7BeupOjtLYJXl',
                     'base_currency' => CurrencyEnum::USD->value,
-                    'currencies' => CurrencyEnum::EUR->value,
                 ],
             ]
         );

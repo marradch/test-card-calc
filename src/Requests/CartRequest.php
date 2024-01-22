@@ -29,7 +29,7 @@ class CartRequest
                     ],
                     'quantity' => [
                         new Assert\NotBlank(),
-                        new Assert\Type(['type' => 'float']),
+                        new Assert\Type(['type' => 'int']),
                     ],
                 ],
             ]),
