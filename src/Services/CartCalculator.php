@@ -20,7 +20,6 @@ class CartCalculator
     public function calculateCartTotalByRequest(CartRequest $cartRequest): float
     {
         $rates = $this->getRates();
-        //var_dump($rates);
 
         $result = 0.0;
         if ($cartRequest->checkoutCurrency === self::BASE_CURRENCY) {
